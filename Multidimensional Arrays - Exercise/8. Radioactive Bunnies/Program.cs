@@ -132,28 +132,28 @@ class Program
                     {
                         if (jag[i - 1][j] != 'B')
                         {
-                            jag[i - 1][j] = 's';
+                            jag[i - 1][j] = 'b';
                         }
                     }
                     if (i < jag.Length - 1)
                     {
                         if (jag[i + 1][j] != 'B')
                         {
-                            jag[i + 1][j] = 's';
+                            jag[i + 1][j] = 'b';
                         }
                     }
                     if (j > 0)
                     {
                         if (jag[i][j - 1] != 'B')
                         {
-                            jag[i][j - 1] = 's';
+                            jag[i][j - 1] = 'b';
                         }
                     }
                     if (j < jag[i].Length - 1)
                     {
                         if (jag[i][j + 1] != 'B')
                         {
-                            jag[i][j + 1] = 's';
+                            jag[i][j + 1] = 'b';
                         }
                     }
                 }
@@ -163,7 +163,7 @@ class Program
         {
             for (int j = 0; j < jag[i].Length; j++)
             {
-                if (jag[i][j] == 's')
+                if (jag[i][j] == 'b')
                 {
                     jag[i][j] = 'B';
                 }
